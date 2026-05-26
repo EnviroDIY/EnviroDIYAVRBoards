@@ -20,27 +20,27 @@
 #define ENVIRODIY_ATMEGA_BOARDS_VERSION_PATCH 0
 
 /** Board major version number (X.x.x) */
-#define MAYFLY_VERSION_MAJOR 1
+#define MAYFLY2_VERSION_MAJOR 2
 /** Board minor version number (x.X.x) */
-#define MAYFLY_VERSION_MINOR 0
+#define MAYFLY2_VERSION_MINOR 0
 /** Board patch version number (x.x.X) */
-#define MAYFLY_VERSION_PATCH 0
+#define MAYFLY2_VERSION_PATCH 0
 
 /**
  * Macro to convert version number into an integer
  *
- * To be used in comparisons, such as MAYFLY_VERSION >= MAYFLY_VERSION_VAL(4, 0, 0)
+ * To be used in comparisons, such as MAYFLY2_VERSION >= MAYFLY2_VERSION_VAL(4, 0, 0)
  */
 #define ENVIRODIY_ATMEGA_BOARDS_VERSION_VAL(major, minor, patch)((major << 16) | (minor << 8) | (patch))
-#define MAYFLY_VERSION_VAL(major, minor, patch)((major << 16) | (minor << 8) | (patch))
+#define MAYFLY2_VERSION_VAL(major, minor, patch)((major << 16) | (minor << 8) | (patch))
 
 /**
  * Current Board version, as an integer
  *
- * To be used in comparisons, such as MAYFLY_VERSION >= MAYFLY_VERSION_VAL(4, 0, 0)
+ * To be used in comparisons, such as MAYFLY2_VERSION >= MAYFLY2_VERSION_VAL(4, 0, 0)
  */
 #define ENVIRODIY_ATMEGA_BOARDS_VERSION ENVIRODIY_ATMEGA_BOARDS_VERSION_VAL(ENVIRODIY_ATMEGA_BOARDS_VERSION_MAJOR, ENVIRODIY_ATMEGA_BOARDS_VERSION_MINOR, ENVIRODIY_ATMEGA_BOARDS_VERSION_PATCH)
-#define MAYFLY_VERSION MAYFLY_VERSION_VAL(MAYFLY_VERSION_MAJOR, MAYFLY_VERSION_MINOR, MAYFLY_VERSION_PATCH)
+#define MAYFLY2_VERSION MAYFLY2_VERSION_VAL(MAYFLY2_VERSION_MAJOR, MAYFLY2_VERSION_MINOR, MAYFLY2_VERSION_PATCH)
 // clang-format on
 
 
@@ -370,6 +370,22 @@ static const uint8_t GROVEPWR_ON = 1;
 static const uint8_t BATVOLTPIN = 30; // A6
 #define BATVOLT_R1 47                 // in fact 4.7M
 #define BATVOLT_R2 100                // in fact 10M
+
+#define SC16IS7XX_DEFAULT_ADDRESS \
+    (0X9A) ///< A0 tied to GND, A1 tied to GND
+#define SC16IS7XX_DEFAULT_XTAL_FREQ \
+    (3686000UL) ///< The default frequency of the crystal in hertz
+
+// External serial chip
+// Port expander pins as static constants
+static const uint8_t X0 = 0;
+static const uint8_t X1 = 1;
+static const uint8_t X2 = 2;
+static const uint8_t X3 = 3;
+static const uint8_t X4 = 4;
+static const uint8_t X5 = 5;
+static const uint8_t X6 = 6;
+static const uint8_t X7 = 7;
 
 #endif // Pins_Arduino_h
 // vim:ai:cin:sts=2 sw=2 ft=cpp

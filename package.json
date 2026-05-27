@@ -1,0 +1,12 @@
+{
+  "name": "framework-arduino-avr-envirodiy",
+  "description": "EnviroDIY ATmega Boards",
+  "version": "2.1.0",
+  "url": "https://www.envirodiy.org/",
+  "author": {
+    "name": "Stroud Water Research Center - EnviroDIY",
+    "email": "info@envirodiy.org"
+  },
+  "keywords": ["framework", "arduino", "microchip", "avr", "EnviroDIY"],
+  "repository": "https://github.com/EnviroDIY/EnviroDIYAVRBoards"
+}

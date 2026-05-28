@@ -5,7 +5,7 @@
   "frameworks": ["arduino"],
   "build": {
     "core": "arduino",
-    "extra_flags": ["-D__ATMEGA1284p__", "-DSD_CHIP_SELECT_MODE=1", "-DENVIRODIY_MAYFLY"],
+    "extra_flags": ["-D__ATMEGA1284p__", "-DSD_CHIP_SELECT_MODE=1", "-DENVIRODIY_MAYFLY", "-DARDUINO_AVR_ENVIRODIY_MAYFLY"],
     "f_cpu": "8000000L",
     "mcu": "atmega1284p",
     "variant": "mayfly",

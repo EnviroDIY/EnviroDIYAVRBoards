@@ -52,7 +52,7 @@ envirodiy_mayfly2.upload.serial.speed=57600
 envirodiy_mayfly2.build.mcu=atmega1284p
 envirodiy_mayfly2.build.f_cpu=8000000L
 envirodiy_mayfly2.build.core=arduino:arduino
-envirodiy_mayfly2.build.board=AVR_ENVIRODIY_MAYFLY_2
+envirodiy_mayfly2.build.board=AVR_ENVIRODIY_MAYFLY
 envirodiy_mayfly2.build.variant=mayfly2
 envirodiy_mayfly2.build.extra_flags=-D__ATMEGA1284p__ -DSD_CHIP_SELECT_MODE=1 -DENVIRODIY_MAYFLY2 -DARDUINO_AVR_ENVIRODIY_MAYFLY2 {build.usb_flags}
 

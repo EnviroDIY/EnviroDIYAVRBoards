@@ -5,9 +5,13 @@ envirodiy_mayfly.name=EnviroDIY Mayfly
 
 # Upload
 envirodiy_mayfly.upload.tool=arduino:avrdude
+envirodiy_mayfly.upload.tool.default=arduino:avrdude
+envirodiy_mayfly.upload.tool.serial=arduino:avrdude
 envirodiy_mayfly.upload.protocol=arduino
 envirodiy_mayfly.upload.maximum_size=130048
+envirodiy_mayfly.upload.maximum_data_size=16384
 envirodiy_mayfly.upload.speed=57600
+envirodiy_mayfly.upload.serial.speed=57600
 
 # Build
 envirodiy_mayfly.build.mcu=atmega1284p
@@ -19,6 +23,7 @@ envirodiy_mayfly.build.extra_flags=-D__ATMEGA1284p__ -DSD_CHIP_SELECT_MODE=1 -DE
 
 # Bootloader
 envirodiy_mayfly.bootloader.tool=arduino:avrdude
+envirodiy_mayfly.bootloader.tool.default=arduino:avrdude
 envirodiy_mayfly.bootloader.low_fuses=0xFF
 envirodiy_mayfly.bootloader.high_fuses=0xD6
 envirodiy_mayfly.bootloader.extended_fuses=0xFD
@@ -35,9 +40,13 @@ envirodiy_mayfly2.name=EnviroDIY Mayfly v2
 
 # Upload
 envirodiy_mayfly2.upload.tool=arduino:avrdude
+envirodiy_mayfly2.upload.tool.default=arduino:avrdude
+envirodiy_mayfly2.upload.tool.serial=arduino:avrdude
 envirodiy_mayfly2.upload.protocol=arduino
 envirodiy_mayfly2.upload.maximum_size=130048
+envirodiy_mayfly2.upload.maximum_data_size=16384
 envirodiy_mayfly2.upload.speed=57600
+envirodiy_mayfly2.upload.serial.speed=57600
 
 # Build
 envirodiy_mayfly2.build.mcu=atmega1284p
@@ -49,6 +58,7 @@ envirodiy_mayfly2.build.extra_flags=-D__ATMEGA1284p__ -DSD_CHIP_SELECT_MODE=1 -D
 
 # Bootloader
 envirodiy_mayfly2.bootloader.tool=arduino:avrdude
+envirodiy_mayfly2.bootloader.tool.default=arduino:avrdude
 envirodiy_mayfly2.bootloader.low_fuses=0xFF
 envirodiy_mayfly2.bootloader.high_fuses=0xD6
 envirodiy_mayfly2.bootloader.extended_fuses=0xFD

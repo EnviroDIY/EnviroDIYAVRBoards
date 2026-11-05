@@ -5,7 +5,7 @@
 # https://arduino.github.io/arduino-cli/latest/platform-specification/
 
 name=EnviroDIY ATmega Boards
-version=2.1.2
+version=2.2.0
 
 # AVR compile variables
 # ---------------------

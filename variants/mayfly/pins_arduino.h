@@ -17,12 +17,12 @@
 /** Package minor version number (x.X.x) */
 #define ENVIRODIY_ATMEGA_BOARDS_VERSION_MINOR 2
 /** Patch version number (x.x.X) */
-#define ENVIRODIY_ATMEGA_BOARDS_VERSION_PATCH 0
+#define ENVIRODIY_ATMEGA_BOARDS_VERSION_PATCH 1
 
 /** Board major version number (X.x.x) */
 #define MAYFLY_VERSION_MAJOR 1
 /** Board minor version number (x.X.x) */
-#define MAYFLY_VERSION_MINOR 0
+#define MAYFLY_VERSION_MINOR 1
 /** Board patch version number (x.x.X) */
 #define MAYFLY_VERSION_PATCH 0
 

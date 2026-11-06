@@ -17,7 +17,7 @@
 /** Package minor version number (x.X.x) */
 #define ENVIRODIY_ATMEGA_BOARDS_VERSION_MINOR 2
 /** Patch version number (x.x.X) */
-#define ENVIRODIY_ATMEGA_BOARDS_VERSION_PATCH 0
+#define ENVIRODIY_ATMEGA_BOARDS_VERSION_PATCH 1
 
 /** Board major version number (X.x.x) */
 #define MAYFLY2_VERSION_MAJOR 2
@@ -362,9 +362,12 @@ static const uint8_t GROVEPWR_ON  = 1;
 static const uint8_t BATVOLTPIN = 30;  // A6, battery voltage
 #define BATVOLT_R1 51  // upper resistor 5.1 MOhm; units 100 kOhm, matching legacy code
 #define BATVOLT_R2 51  // lower resistor 5.1 MOhm
-static const uint8_t BQINPIN = 29;    // A5, charger/input voltage
-#define BQIN_R1_KOHM 6980             // 6.98 MOhm
-#define BQIN_R2_KOHM 1000             // 1.00 MOhm
+// Input supply voltage measurement
+static const uint8_t BQINPIN = 29;  // A5, charger/input voltage
+#define BQIN_R1_KOHM 6980           // 6.98 MOhm
+#define BQIN_R2_KOHM 1000           // 1.00 MOhm
+
+// Real-time clock
 static const uint8_t RTCINTPIN = 31;  // A7 / RV-3032 interrupt
 
 /// SC16IS7 Address = A0 tied to GND, A1 tied to GND
